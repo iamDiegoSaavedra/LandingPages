@@ -1,0 +1,52 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 30%, rgba(0,212,255,1) 100%);   
+    font-size: 30px;
+    text-align: center;
+
+}
+
+div.formulario{
+    background-color: beige;
+    width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    margin:auto;
+    text-align: left;
+}
+
+button{
+    background-color: coral;
+    color: black;
+    padding: 10px, 20px;
+}
+
+div.botones{
+
+    text-align:center;
+    margin-top: 2em;
+}
+
+label{
+    width: 200px;
+    display: inline-block;
+}
+
+input{
+    font-size: 15px;
+    padding:  5px, 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+select{
+    padding: 8px, 20px;
+    font-size: 15px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+img{
+    width:max-content;
+    height: 200px;
+}
