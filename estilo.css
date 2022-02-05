@@ -1,6 +1,5 @@
 body{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 30%, rgba(0,212,255,1) 100%);   
+    background-color: #dcd8ac;
     font-size: 30px;
     text-align: center;
 }
@@ -8,14 +7,10 @@ body{
 div.formulario {
     width: 500px;
     margin: auto;
-    background-color: white;
+    background-color: #ffccff;
     padding: 20px;
     border-radius: 15px;   
     text-align: left; 
-}
-
-div.form-line {
-    margin-bottom: 15px;
 }
 
 div.columna-1, 
@@ -24,8 +19,11 @@ div.columna-2{
 	float: left;
 }
 
-div.columna-2{
-	background-color:beige;
+
+div.col-interna{
+    background-color: darkgray;
+    border: 1px solid black;
+    border-radius: 25px;
 }
 
 button {
@@ -57,12 +55,17 @@ input {
     border-radius: 5px;
 }
 
+.radio-option{
+    float:left;
+    line-height: 15px;
+}
 
 select {
+    height: auto;
     padding: 8px 20px;
     font-size: 15px;
     border: 1px solid brown;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 
@@ -75,9 +78,35 @@ div.banner{
     padding-right: 20px;
 }
 
+div.columna-1, div.columna-2{
+    width: 50%;
+    float: left;
+}
+
 div.clearfix {
     clear: both;
 }
+
+
+.icon {
+    color: inherit;
+    fill: currentColor;
+    height: 1em;
+    vertical-align: middle;
+    width: 1em;
+}
+
+div.footer{
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: black;
+}
+
+div.footer p{
+    float: left;
+}
+
 
 /* EStilo del menú */
 ul {
@@ -103,4 +132,11 @@ li {
     padding: 10px 15px;
     text-decoration: none;
   }
+
+  li a:hover{
+      color:skyblue;
+  }
+
+
+
 
