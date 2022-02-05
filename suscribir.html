@@ -19,8 +19,8 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Autora</a></li>
                 <li><a href="#">Reseñas</a></li>
+                <li><a href="#">Donde Comprar</a></li>					
                 <li><a href="suscribir.html">Suscripción</a></li>
                 <li><a href="suscriptor.html">ver suscriptor</a></li>
             </ul>
@@ -30,14 +30,14 @@
     <div class="clearfix"></div> 
     
     <div class="columna-1">
-        <h2>suscribete</h2>
+       
 
     </div>
     
     <div class="columna-2">
         <!-- comienzo formulario -->
 			<div class="formulario">
-                <form action="" method="get">
+                <form action="" method="get" id="formulario">
                     <div class="form-line">
                         <label for="nombre">Nombre</label>
                         <input name="nombre" id="nombre" placeholder="Juan Pérez" />
@@ -59,7 +59,7 @@
                             <label for="femenino">Femenino</label>
                         </div>
                     </div>
-                
+                    <br>                
                     <div class="form-line">
                         <label for="edad">Edad:</label>
                         <select name="edad" id="edad">
@@ -74,7 +74,7 @@
                     </div>
                     
                     <div class="botones">
-                        <button type="submit">Suscribir</button>
+                        <button type="submit" onclick="return enviarForm();">Suscribir</button>
                         <button type="reset">Limpiar</button>
                     </div>
                 </form>
@@ -82,60 +82,16 @@
                 <!-- Fin formulairo -->
     </div>
 
+    <div id="error"></div>
 
-    <script> 
-    const { createClient } = supabase;
-    const baseURL = "https://hwwyuypdcxdigyfznqcw.supabase.co";
-    const apiCall = "/rest/v1/registro";
-    const apiKey =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic2VydmljZV9yb2xlIiwiaWF0IjoxNjQzODM4OTEyLCJleHAiOjE5NTk0MTQ5MTJ9.tNykPvbzGeUsS7UoP2mNJNBjKUG6R76HPcNtLT1TjBc";
-    const url = baseURL + apiCall;
+    <div id="enviado"></div>
 
-        //variable contenedor
-        const contenedor = document.querySelector("tbody");
-        let resultados = "";
 
-        const mostrar = (registros) => {
-        registros.forEach((registro) => {
-            resultados += ` 
-                                <tr>
-                                    <td>${registro.id}</td>
-                                    <td>${registro.pname}</td>
-                                    <td>${registro.fnac}</td>
-                                    <td>${registro.especie}</td>
-                                    <td>${registro.raza}</td>
-                                    <td>${registro.sexo}</td>
-                                    <td>${registro.peso}</td>
-                                    <td>${registro.diagnostico}</td>
-                                </tr>
-                                `;
-        });
-        contenedor.innerHTML = resultados;
-        };
+    <script src="js\javascript.js">
 
-        document.getElementById("btnload").addEventListener("click", () => {
-        fetch(url, {
-            headers: {
-            method: "GET",
-            "Content-Type": "application/json",
-            apikey: apiKey,
-            authorization: "Bearer " + apiKey,
-            },
-        })
-            .then((response) => {
-            console.dir(response);
-            return response.json();
-            })
-            .then((data) => {
-            console.dir(data);
-            mostrar(data);
-            return data;
-            })
-            .catch((error) => {
-            console.dir(error);
-            return error;
-            });
-        });
     </script>
+
+
+    
 </body>
 </html>
