@@ -82,6 +82,28 @@ div.columna-1, div.columna-2{
     width: 50%;
     float: left;
 }
+/* reseñas*/
+div.colreseña-1, 
+div.colreseña-2,
+div.colreseña-3 {
+    width: 33%;
+    float: left;
+}
+
+div.colreseña-2 {
+    background-color: coral;
+}
+
+div.reseña {
+    padding: 30px;
+    text-align: center;
+}
+
+div.reseñas img {
+    height: 180px;
+    width: 150px;
+}
+/*fin*/
 
 div.clearfix {
     clear: both;
@@ -96,16 +118,24 @@ div.clearfix {
     width: 1em;
 }
 
+/*
 div.footer{
     text-align: center;
-    padding: 3px;
-    background-color: DarkSalmon;
+    padding: 20px;
+    background-color:coral;
     color: black;
+}*/
+
+div.footer {
+    clear: both;
+    padding-top: 50px;
+    color: #585858;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 15px;
+    line-height: 1.8rem;
 }
 
-div.footer p{
-    float: left;
-}
 
 
 /* EStilo del menú */
@@ -137,6 +167,10 @@ li {
       color:skyblue;
   }
 
+  /*table*/
+  table, th, td {
+    border:1px solid black;
+  }
 
 
 
