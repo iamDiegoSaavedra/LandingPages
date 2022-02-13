@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="estilo.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Nuevo Libro Anne Baileys</title>
     
 </head>
@@ -14,85 +15,91 @@
     <div class="banner">
         <img src="img\cropped-cropped-coffee-and-book-vintage-image.jpg" alt="imgbanner" width="900" height="200"/>
     </div>
-
+    
     <div class="menu">
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="resenas.html">Reseñas</a></li>
-                <li><a href="#">Donde Comprar</a></li>					
+                <li><a href="biografia.html">biografía</a></li>					
                 <li><a href="suscribir.html">Suscripción</a></li>
                 <li><a href="suscriptor.html">ver suscriptor</a></li>
             </ul>
         </nav>
     </div>
      
-    <div class="clearfix"></div> 
-    
-    <div class="columna-1">
-       <h2>Suscribete</h2>
-       <img src="img\img-libro.jpg" alt="anneBaileys" width="100px" height="100px" />
-       <p>
-            partcipa y podras ganar uno de los 50 libros a regalar.
-            
-       </p>
-
-    </div>
-    
-    <div class="columna-2">
-        <!-- comienzo formulario -->
-			<div class="formulario">
-                <form action="" method="get" id="formulario">
-                    <div class="form-line">
-                        <label for="nombre">Nombre</label>
-                        <input name="nombre" id="nombre" placeholder="Juan Pérez" />
-                    </div>
-                
-                    <div class="form-line">
-                        <label for="email">Email</label>
-                        <input name="email" id="email" placeholder="jperez@gmail.com" />
-                    </div>        
-                 
-                    <div class="form-line">
-                        <p>Género:</p>
-                        <div class="radio-option">
-                            <input type="radio" id="masculino" name="genero" value="masculino">
-                            <label for="masculino">Masculino</label>
-                        </div>
-                        <div class="radio-option">
-                            <input type="radio" id="femenino" name="genero" value="femenino">
-                            <label for="femenino">Femenino</label>
-                        </div>
-                    </div>
-                    <br>
-
-                    <div class="form-line">
-                        <label for="edad">Edad:</label>
-                        <select name="edad" id="edad">
-                            <option value="10-20">10-20</option>
-                            <option value="21-30">21-30</option>
-                            <option value="31-40">31-40</option>
-                            <option value="41-50">41-50</option>
-                            <option value="51-60">51-60</option>
-                            <option value="61-70">61-70</option>
-                            <option value="71-80">71-80</option>
-                        </select>
-                    </div>
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6 text-center">
+                <h2>Suscribete</h2>
+                <img src="img\img-libro.jpg" alt="anneBaileys" width="100px" height="100px" />
+                <p>
+                    partcipa y podras ganar uno de los 50 libros a regalar.
                     
-                    <div class="botones">
-                        <button type="submit" onclick="return enviarForm();">Suscribir</button>
-                        <button type="reset">Limpiar</button>
-                    </div>
-                
-                </form>
+                </p>
+        
             </div>
-        <!-- Fin formulario -->
+            
+            <div class="col-sm-12 col-lg-6 text-center">
+                <!-- comienzo formulario -->
+                    <div class="formulario">
+                        <form action="" method="get" id="formulario">
+                            <div class="form-line">
+                                <label for="nombre">Nombre</label>
+                                <input name="nombre" id="nombre" placeholder="Juan Pérez" />
+                            </div>
+                        
+                            <div class="form-line">
+                                <label for="email">Email</label>
+                                <input name="email" id="email" placeholder="jperez@gmail.com" />
+                            </div>        
+                        
+                            <div class="form-line">
+                                <p>Género:</p>
+                                <div class="radio-option">
+                                    <input type="radio" id="masculino" name="genero" value="masculino">
+                                    <label for="masculino">Masculino</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="femenino" name="genero" value="femenino">
+                                    <label for="femenino">Femenino</label>
+                                </div>
+                            </div>
+                            <br>
+        
+                            <div class="form-line">
+                                <label for="edad">Edad:</label>
+                                <select name="edad" id="edad">
+                                    <option value="10-20">10-20</option>
+                                    <option value="21-30">21-30</option>
+                                    <option value="31-40">31-40</option>
+                                    <option value="41-50">41-50</option>
+                                    <option value="51-60">51-60</option>
+                                    <option value="61-70">61-70</option>
+                                    <option value="71-80">71-80</option>
+                                </select>
+                            </div>
+                            
+                            <div class="botones">
+                                <button type="submit" onclick="return enviarForm();">Suscribir</button>
+                                <button type="reset">Limpiar</button>
+                            </div>
+                        
+                        </form>
+                    </div>
+                <!-- Fin formulario -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="error"></div>
+    
+            <div id="enviado"></div>
+        </div>
     </div>
-
-    <div id="error"></div>
-
-    <div id="enviado"></div>
-
+    
+    
     <div class="footer">
         <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
         <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
