@@ -1,0 +1,255 @@
+body{
+  background-color:#eeeeee;
+}
+
+/*
+* Banner Suscripción
+*/
+.container-banner{
+  background-color: #494a50;
+  min-height: 202px; 
+  width: 100%;
+}
+
+.banner-img{
+  background-color: #000;
+  width:48%;
+	height: 200px;
+	float: left;
+}
+
+.banner-img-promo{
+  object-fit: cover;
+	object-position: center center;
+	height: 200px;
+	width: 100%;
+}
+
+@media (max-width: 967px) {
+  .banner-img{
+    width:45%;
+  }
+}
+
+.skrew-banner{
+  background-color: #494a50;
+  margin-left: -45px; 
+  right: -45px; 
+  transform: skewX(10deg); 
+  width: 64px; 
+  height: 200px; 
+  float:left;
+}
+
+.text-banner{
+  background-color: #494a50;
+  color: #fff;
+  width:50%; 
+  height: 200px;
+  float:left;
+}
+
+
+
+
+/*
+* Contenedor form suscriptor
+*/
+.wrapper-suscriptor{
+    max-width: 960px; 
+    margin: 0 auto; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #eeeeee;   
+}
+
+/*imagen form Suscripción */
+
+.wrapper-img{
+  background-color: #eeeeee;
+  width: 40%;
+}
+
+.img-form-subs{
+  height: 100%; 
+  width: 100%;
+  margin: 0; 
+  display: block; 
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 920px){
+  .wrapper-img{
+    display: none;
+  }
+}
+
+/* HEADER FORM */
+.stripe-title-suscriptor{
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    background-color:#ecd803;
+    color:#1C2833;
+    text-align: center;
+}
+
+/* COLOR FORM*/
+.form-wrap-color{
+    background-color: #0181a1;
+    color: #ffffff;
+    width: 60%; 
+}
+
+@media screen and (max-width: 920px){
+  .form-wrap-color{
+    width: 100%;
+  }
+}
+
+.form-style{
+    margin-top: 1rem; 
+    padding: 0.25em;
+}
+
+/* link  terminos y condiciones*/
+#btnTerms{
+  text-decoration: underline;
+  color: #39ff14;
+}
+
+#btnTerms:hover{
+  cursor: pointer;
+}
+
+/* 
+* radio button 
+*/
+.radio-option{
+    float:left;
+    margin-left: 5px;
+    line-height: 15px;
+}
+
+input[type="radio"]:hover{
+  cursor: pointer;
+}
+
+input[type="radio"]:checked{
+  background-color: #228b22;/*#006400*/
+  border: 1px solid #ffffff;
+}
+
+
+/* checkbox */
+input[type="checkbox"]:hover{
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+  border-radius: 0;
+  border: 0 #f8f8f8;
+  background-color:#228b22;
+  box-shadow: none;
+}
+
+/* 
+* boton form
+*/
+.btn-form{
+  display: block;
+  height: 40px;
+  width: 150px;
+  
+  background-color: #fed766;
+  color: #494a50;
+  margin: 5px auto;
+  text-decoration: none;
+  border-radius: 0;
+}
+
+.btn-form:hover{
+  background-color: #648c11;
+  color: #ffffff;
+}
+
+
+/*
+* error box y mensajes
+*/
+.error-div{
+  display: block; 
+  min-height: 21px;
+}
+
+.error-msg{
+  display: block; 
+  font-size: 0.8em;
+}
+
+/* 
+* Range slider Edad 
+*/
+.slidecontainer{
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.slider{
+  /* -webkit-appearance: none; */
+  appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 8px;
+  background: #f8f8f8;
+  outline: none;
+  opacity: 0.8;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background:  #f4c430; /*#3fff00;*/
+  border: 4px solid  #555555;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #f4c430; /*#04AA6D*/;
+  border: 4px solid #555555;
+  cursor: pointer;
+}
+
+/* Formulario contacto footer*/
+.form-group {
+	margin-bottom: 1rem;
+}
+
+
+/* Media Queries Imagenes*/
+@media screen and (max-width: 920px){
+  .banner-img{
+    display: none;
+  }
+
+  .skrew-banner{
+    display: none;
+  }
+
+  .text-banner{
+    width: 100%;
+  }
+}
+

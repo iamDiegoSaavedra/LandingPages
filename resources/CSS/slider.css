@@ -1,0 +1,79 @@
+/* quitar estilo btn y hacerlo parecer link */
+#btnTerms{
+  text-decoration: underline;
+  color: #0000ff;
+}
+
+#btnTerms:hover{
+  cursor: pointer;
+}
+
+/* SLIDER */
+.slidecontainer{
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.slider{
+  appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.8;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #8b008b ;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #8b008b /*#04AA6D*/;
+  cursor: pointer;
+}
+
+/**********************************
+WRAPPER
+**********************************/
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper-sli{
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  display: flex;  
+  flex-wrap: wrap;
+}
+
+.wrapper-sli > * {
+  padding: 1em;
+}
+
+.contact{
+  width: 50%;
+  background: #4b5195;
+  color: #fff;
+}
+
+.form{
+  width: 50%;
+}

@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+}
+
+section .aside {
+    width: 25%;
+    min-height: 1088px; /**1157**/
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-left: 5px;
+    float: left;
+    font-style: italic;
+    background-color: lightgray;
+}
+
+section .aside h3{
+    color: #070707;
+}
+
+@media (max-width:1199px){
+    section .aside{ 
+        height: 1135px;
+    }
+}
+
+@media (max-width:1046px){
+    section .aside{ 
+        height: 1132px;
+    }
+}
+
+@media (max-width:964px){
+    section .aside{ 
+        height: 1156px;
+    }
+}
+
+@media (max-width:920px){
+    section .aside{ 
+        width: 100%;
+        height: auto;
+        min-height: 0;
+    }
+}
+
+
+/* Banner Promo Libro Nuevo*/
+.banner-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 56px;
+}
+
+
+
+@media (max-width: 1000px){
+	.banner-contenedor{
+        margin-top: 56px;
+    }
+}
+
+
+.banner-contenedor .banner{
+    background:linear-gradient(-72deg, #fe7e5e 50%, #0181a1 50%);
+    height: 320px;
+    width: 100%;
+    border: none;
+    
+    margin-bottom: 10px;
+    /* margin: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px #0005;
+    overflow: hidden;
+}
+
+/* Imagen banner promo*/
+.banner-contenedor .banner .img-book{
+    flex: 1 1 250px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Texto banner promo*/
+.banner-contenedor .banner .content{
+    flex: 1 1 250px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.banner-contenedor .banner .content span{
+    color:#fff;
+    font-size: 25px;
+}
+
+.banner-contenedor .banner .content h3{
+    color:#fff;
+    font-size: 25 px;
+}
+
+.banner-contenedor .banner .content p{
+    color:#fff;
+    font-size: 15px;
+}
+
+/* Botón banner promo*/
+.banner-contenedor .banner .content .button{
+    display: block;
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+    background-color: #fed766;
+    color: #555555;
+    margin: 5px auto;
+    text-decoration: none;
+}
+
+.banner-contenedor .banner .content .button:hover{
+    background-color: #fff;
+    color: #555555;
+}
+
+
+/* card libros ventas*/
+.card-img-top{
+    text-align: center; 
+    height: 320px; 
+    width: 240px;
+}
+
+div .card{
+    align-items: center;
+    text-align: center;
+    margin-left: 0.5rem; 
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px solid #006882;
+}
+
+div .card .btn{
+    border-radius: 0;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff; 
+    background-color: #0181a1;
+}
+
+div .card .btn:hover{
+    background-color: #fe7e5e;
+    color: #ffffff;
+}
+
+/* Formulario Contacto */
+.form-group {
+	margin-bottom: 1rem;
+}
+
+@media (max-width:768px){
+    .banner-conteiner .banner{
+        background:#0181a1;
+        margin-top: 0;
+    }
+
+    .banner-conteiner .banner .img-book{
+        display: none;
+    }
+}
