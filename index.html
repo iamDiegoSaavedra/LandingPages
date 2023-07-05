@@ -1,63 +1,189 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="estilo.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<title>Nuevo Libro Anne Baileys</title>
-    </head>
-    <body>
-        <div class="banner">
-			<img src="img\cropped-cropped-coffee-and-book-vintage-image.jpg" alt="imgbanner" width="900" height="200"/>
-		</div>
-
-		<div class="menu">
-			<nav>
-				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="resenas.html">Reseñas</a></li>
-					<li><a href="biografia.html">biografía</a></li>					
-					<li><a href="suscribir.html">Suscripción</a></li>
-					<li><a href="suscriptor.html">ver suscriptor</a></li>
-				</ul>
-			</nav>
-		</div>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anne Bailey Nuevo Libro</title>
+   
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-beta1/css/bootstrap.min.css" integrity="sha512-thoh2veB35ojlAhyYZC0eaztTAUhxLvSZlWrNtlV01njqs/UdY3421Jg7lX0Gq9SRdGVQeL8xeBp9x1IPyL1wQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="resources/font-awesome/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+	<link href="resources/css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+ 
+ 
+	<header>
 		
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-lg-6 text-center">
-					<h2>Anne Baileys</h2>
-					<img src="img\INDEX.jfif" alt="anneBaileys" width="330px" height="280px" />
-				</div>		
-				
-				<div class="col-sm-12 col-lg-6 text-center">
-					<h2>Proximo Libro</h2>
-					<img src="img\img-libro.jpg" alt="anneBaileys" width="100px" height="100px" />
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-						Quisque ac ligula vitae est porttitor finibus in vulputate est. 
-						Vestibulum tempus mattis condimentum. 
-						Pellentesque suscipit gravida arcu, eu commodo sem pellentesque eget.
-						Phasellus quis rutrum urna. Donec felis sapien, aliquet in molestie vitae, porttitor ac neque.
-						In volutpat vel libero et hendrerit. Ut auctor imperdiet ex vitae laoreet. 
-						Vivamus a scelerisque est, ut placerat massa. Vivamus at dignissim ante, eu lacinia mi. 
-						Nullam velit mi, vulputate et enim eu, mollis feugiat urna 
-					</p>
-				</div>
+	</header>
+  
+	<!-- HEADER -->
+	<div class="header-index">
+		
+		<h1>Anne Bailey ha publicado nuevo libro.</h1>
+		<img src="img/Alice Bailey.jpg" class="img-header-anne" alt="ann-bailey">
+		<span><a href="https://es.vecteezy.com/foto/9982705-portada-libro-lienzo-texturizado-fondo-azul-oscuro"></a></span>
+	</div>
+	
+	
+	<!-- CONTENIDO  -->
+	
+	<!-- RESUME BIO-->
+	<div id="section-bio">
+		<div class="bio-banner" >
+			<h2>Anne Bailey</h2>
+			<p>A writer, historian, and professor of History at SUNY Binghamton (State University of New York). Bailey is committed to a concept of “living history” in which events of the past are connected to current and contemporary issues.</p>
+			<a href="#" class="btn btn-primary">Show More</a>	
+		</div>
+	</div>
+	
+	<!-- BANNER NEW BOOK -->
+	<div class="spreader-bar">
+		<h1>Nueva Publicacion de Libro</h1>
+	</div>
+	
+	<!-- Nuevo libro -->
+	<div id="promo-nuevo" class="container col-10" style="padding:1em;">
+		<div class="row">
+			<div class="col img-promo-nuevo">
+				<img class="img-new-coverbook" src="img/Cover-book.png" alt="cover-book.jpg" >
 			</div>
-		</div><!--end Container-->
-		 
-		<!--pie de página-->
-		<div class="footer">
-			<i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
-			<i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
-			<i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-			<p>Copyright © 2022 Planeta. Todos los derechos reservados</p>
-		</div>									
-		<!--Fin Pie Página-->
-    </body>
+			<div class="col" >
+				<div class="row">
+					<div class="icon-cont">
+						<a href="https://www.flaticon.com/free-icons/book" title="book icon by flaticon"><img class="img-iconbook" src="img/icon-book-color.png" ></a>
+						
+					</div>
+					<div class="text-iconbook">
+							<h4>Nuevo libro</h4>
+					</div>
+				</div>
+				<div class="row p-2">
+				</div>
+				<div class="row txt-description p-2">
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet diam sapien, eu fermentum urna mollis eu. Ut volutpat mollis aliquet. Nulla elit lacus, blandit sit amet bibendum at, lacinia eget urna".</p>
+				</div>
+				<div class="row p-2">
+				</div>
+				<div class="row p-2">
+					<div class="parting-line-2"></div>
+				</div>
+				<div class="row p-2">
+				</div>
+				<div class="row p-2">
+					<div style="text-align: center;">
+						<a href="#" class="btn btn-primary">Buy Now</a>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	
+	<!-- reseña-->
+	<div id="header" class="banner-resenia">
+		<h2>Reseñas</h2>
+	</div>
+	
+	<div id="section" class="container col-10">
+		<!-- reseña 1 -->
+		<div class="row">
+			<div class="col-sm-12 col-md-9 col-lg-9">
+				<p class="italic">
+					<img src="img/kisspng-quote-sign-left (1).png" class="quote-sign-left" alt="quote-sign">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec ipsum sit amet urna sodales venenatis. Donec rhoncus, tortor sit amet consequat mattis, erat tortor fringilla lectus, vitae accumsan mi augue id purus.
+					<img src="img/kisspng-quote-sign-right(2).png" class="quote-sign-right" alt="quote-sign">
+					<a href="https://www.ideal.es/culturas/libros/libros-recomiendan-semana-criticos-ideal-20230128174527-nt.html" class="btnexp">
+						<span class="txtex">&nbsp;read more </span>
+						<span> <span class="icon"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span></span>
+					</a>
+				</p>
+				
+			</div>
+			<div class="col-sm-12 col-md-3 col-lg-3" >
+				<img src="img/critico-dos.jpg" alt="critico" class="img-resenas"> 
+				<p>Lucila Fernadez - critico</p>
+			</div>
+	
+		</div>
+		
+		<!-- separacion -->
+		<div class="parting-line">
+		</div>
+
+		<!-- reseña 2 -->
+		<div class="row">
+			<div class="col-sm-12 col-md-3 col-lg-3" >
+				<img src="img/critico-uno.jpg" alt="critico" class="img-resenas" >
+				<p>Michael Domingos - critico</p>
+			</div>
+			<div class="col-sm-12 col-md-9 col-lg-9">
+				<p class="italic">
+					<img src="img/kisspng-quote-sign-left (1).png" class="quote-sign-left" alt="quote-sign">
+						Curabitur aliquam purus nec auctor dignissim. Curabitur vitae libero et tortor feugiat ornare. Fusce sit amet leo in purus viverra finibus vel quis urna. Phasellus ullamcorper in neque id gravida.
+					<img src="img/kisspng-quote-sign-right(2).png" class="quote-sign-right" alt="quote-sign">
+					<a href="https://www.ideal.es/culturas/libros/libros-recomiendan-semana-criticos-ideal-20230128174527-nt.html" class="btnexp">
+						<span class="txtex">&nbsp;read more </span>
+						<span> <span class="icon"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span></span>
+					</a>
+				</p>
+				
+			</div>
+		</div>
+		
+	</div><!-- end reseña -->
+	
+	
+	<!-- OTROS LIBROS -->
+	<div>
+		<div id="header" class="banner-promo-libros">
+			<h2>Libros de Anne Bailey</h2>
+		</div>
+		<div class="container pt-2 pb-2" >
+		
+			<div class="row">
+				<div class="col-md-4 col-sm-12">
+					<h4>Choose your next read</h4>
+					<br>
+					<a href="#" class="btnexp">
+						<span class="txtex">&nbsp;Ir a Comprar</span>
+						<span class="icon"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
+					</a>
+				</div>
+				<div class="col-md-2 col-sm-6 p-1">
+					<img src="img/Cover-book.png" alt="cover book" style="height: auto; max-height: 200px; width: auto;">
+				</div> 
+				<div class="col-md-2 col-sm-6 p-1">
+					<img src="img/Cover-book.png" alt="cover book" style="height: 100%; max-height: 200px;">
+				</div>
+				<div class="col-md-2 col-sm-6 p-1">
+					<img src="img/Cover-book.png" alt="cover book" style="height: 100%; max-height: 200px;">
+				</div>
+				<div class="col-md-2 col-sm-6 p-1">
+					<img src="img/Cover-book.png" alt="cover book" style="height: 100%; max-height: 200px;">
+				</div>
+
+			</div>
+			
+
+		</div><!-- contenedor libros-->
+
+	</div><!-- end otros libros -->
+	
+	
+	<footer>
+	</footer>
+
+	<!-- JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js" integrity="sha512-q2vREMvON/xrz1KuOj5QKWmdvcHtM4XNbNer+Qbf4TOj+RMDnul0Fg3VmmYprdf3fnL1gZgzKhZszsp62r5Ugg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="resources/JS/snippets.js"></script>
+  
+
+  </body>
+  
+	
 </html>
